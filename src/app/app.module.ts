@@ -18,13 +18,18 @@ import { AppRoutingModule }             from './app.routing';
 
 //Layouts
 import { FullLayoutComponent }          from './layouts/full-layout.component';
+import { SimpleLayoutComponent }        from './layouts/simple-layout.component';
+import { AuthenticationModule } from './authentication/authentication.module';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
     imports: [
         BrowserModule,
         AppRoutingModule,
         Ng2BootstrapModule,
-        ChartsModule
+        ChartsModule,
+        HttpModule,
+        AuthenticationModule
     ],
     declarations: [
         AppComponent,
